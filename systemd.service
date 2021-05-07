@@ -3,7 +3,7 @@ Description = Login Service
 [Service]
 User=root
 Environment=USERS_API_ADDRESS=http://users_endpoint:8080
-ExecStart=/go/src/login/login
+ExecStart=/home/ubuntu/login/login
 SyslogIdentifier=login
 
 [Install]
