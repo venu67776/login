@@ -1,8 +1,9 @@
-[Unit]
-Description = Login Service
+Description = login Service
+
 [Service]
-User=root
-Environment=USERS_API_ADDRESS=http://users_endpoint:8080
+
+Environment=USERS_API_ADDRESS=user_endpoint
+Environment=AUTH_API_PORT=8080
 ExecStart=/home/ubuntu/login/login
 SyslogIdentifier=login
 
