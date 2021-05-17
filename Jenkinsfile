@@ -1,9 +1,9 @@
-@Library('todoapp') _
+@Library('todo') _
 
-todoapp (
+todo (
         COMPONENT             : 'login',
         PROJECT_NAME          : "todoapp",
-        SLAVE_LABEL           : "MASTER",
+        SLAVE_LABEL           : "GOLANG",
         SKIP_NEXUS_UPLOAD     : false,
         APP_TYPE              : "GOLANG"
 )
