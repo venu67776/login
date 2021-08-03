@@ -1,0 +1,6 @@
+@Library('todo') _
+
+todo (
+        COMPONENT             : 'login',
+        PROJECT_NAME          : "todo"
+)
