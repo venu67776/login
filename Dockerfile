@@ -1,8 +1,8 @@
-FROM golang:alpine
-RUN mkdir -p $GOPATH/src/build
-ADD . $GOPATH/src/build/
-WORKDIR $GOPATH/src/build
+FROM golang:latest
+RUN mkdir app
+ADD . app
+WORKDIR /app
 RUN go mod init
 RUN go get ./...
-RUN go build -o main .
-CMD ["./main"]
+RUN go build
+CMD ["./app-ci"]
