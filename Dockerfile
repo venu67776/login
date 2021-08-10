@@ -1,8 +1,7 @@
-FROM golang:latest
-RUN mkdir app
-ADD . app
+FROM golang  
 WORKDIR /app
-RUN go mod init
-RUN go get ./...
+ADD . .
+RUN export GOPATH=/go
+RUN go get -d
 RUN go build
-CMD ["./app-ci"]
+CMD ["./app"]
