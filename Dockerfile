@@ -5,4 +5,5 @@ WORKDIR /go/src/app
 RUN     GOPATH=~/go
 RUN     go get
 RUN     go build
+EXPOSE  8080
 CMD     ["./app"]
