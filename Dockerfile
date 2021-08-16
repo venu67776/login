@@ -6,4 +6,4 @@ RUN     GOPATH=~/go
 RUN     go get
 EXPOSE  8080
 RUN     go build
-CMD     ["./app","8080"]
+CMD     ["./app"]
